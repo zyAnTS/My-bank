@@ -1,0 +1,155 @@
+body {
+  background-color: #eceff1;
+}
+
+#root {
+  font-family: "Jura", sans-serif;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+header {
+  background-color: #273338;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header .container h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.user {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.userIcon {
+  padding: 16px;
+  border-radius: 64px;
+  background-color: #ffffff;
+}
+
+.user:hover {
+  opacity: 0.8;
+}
+
+i {
+  font-size: 24px;
+  color: #333333;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.operation {
+  display: flex;
+  gap: 16px;
+  margin: 0 32px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.operation p:nth-child(1) {
+  flex: 1;
+}
+
+.description-amount {
+  flex: 6;
+  display: flex;
+  gap: 16px;
+}
+
+.description-amount p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: 1;
+}
+
+.description-amount p:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.operation:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.operation:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.operation:hover {
+  background-color: #eeeeee;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 32px;
+}
+
+button {
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #f6f7f8;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #dddddd;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .operation > p:nth-child(1) {
+    font-size: 12px;
+  }
+
+  .operation {
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 16px;
+  }
+
+  .button {
+    padding: 0 16px;
+  }
+}
