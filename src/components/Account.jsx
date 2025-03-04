@@ -1,17 +1,14 @@
 import Operations from "./Operations";
+import Button from "./Button";
+import Title from "./Title";
 
 const Account = ({ name, balance, color, operations, key }) => {
   console.log(operations);
   return (
     <section key={key}>
-      <article style={{ backgroundColor: `${color}` }}>
-        <p>{name}</p>
-        <p>{balance} €</p>
-      </article>
+      <Title name={name} color={color} balance={balance} />
       <Operations operations={operations} />
-      <div className="button">
-        <button>SEE MORE</button>
-      </div>
+      <Button nameButton="See more" />
     </section>
   );
 };
